@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mhammed.gan.recherche"
+    android:id="@+id/s">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:hint= "Mot-clé (ex : commercial)"
+        android:textColorHint="#8b8989"
+        android:textColor="#696969"
+        android:backgroundTint="#2e8b57"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rechercher"
+        android:id="@+id/button6"
+        android:onClick="getj"
+        android:background="#2e8b57"
+        android:textColor="#fffafa"
+        android:layout_below="@+id/editText6"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editText6"
+        android:layout_alignEnd="@+id/editText6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="santé"
+        android:onClick="educ"
+        android:id="@+id/button4"
+        android:textColor="#2e8b57"
+        android:layout_below="@+id/button6"
+        android:layout_marginTop="240dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button6"
+        android:layout_alignEnd="@+id/button6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="juridique"
+        android:id="@+id/button7"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="5dp"
+        android:background="#808080"
+        android:textColor="#fffafa"
+        android:onClick="juridique"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="comptabilité &amp; finance"
+        android:id="@+id/button8"
+        android:textColor="#2e8b57"
+        android:layout_below="@+id/button7"
+        android:layout_marginTop="5dp"
+        android:onClick="finance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="informatique &amp; technologie"
+        android:id="@+id/button9"
+        android:background="#808080"
+        android:textColor="#fffafa"
+        android:onClick="informatique"
+        android:layout_below="@+id/button8"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="restauration &amp; hotellerie"
+        android:id="@+id/button10"
+        android:textColor="#2e8b57"
+        android:onClick="restauration"
+        android:layout_below="@+id/button9"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="sécurité"
+        android:id="@+id/button11"
+        android:background="#808080"
+        android:textColor="#fffafa"
+        android:onClick="securite"
+        android:layout_below="@+id/button10"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="toutes les offres"
+        android:id="@+id/button12"
+        android:textColor="#2e8b57"
+        android:onClick="toutes"
+        android:layout_below="@+id/button11"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="quitter"
+        android:id="@+id/button13"
+        android:background="#808080"
+        android:textColor="#fffafa"
+        android:onClick="quitter"
+        android:layout_below="@+id/button12"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/button6"
+        android:layout_marginTop="50dp"
+        android:id="@+id/imageButton"
+        android:background="@drawable/icnn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="40dp">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_name"
+        android:text="societe"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_poste"
+        android:text="poste"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/tx_name"/>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_adresse"
+        android:text="adresse"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/tx_poste"/>
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_email"
+        android:text="email"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/tx_adresse"/>
+
+</RelativeLayout>
